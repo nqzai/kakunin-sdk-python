@@ -1,0 +1,78 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "kakunin"
+version = "0.2.0"
+description = "Python SDK for the Kakunin AI agent compliance API"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.10"
+authors = [{ name = "Kakunin", email = "dev@kakunin.ai" }]
+keywords = ["kyc", "ai-agents", "compliance", "mica", "eu-ai-act", "x509", "agent-identity"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+    "Typing :: Typed",
+]
+dependencies = [
+    "httpx>=0.27.0",
+    "pydantic>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "respx>=0.21.0",
+    "mypy>=1.9.0",
+]
+camel = ["camel-ai>=0.2.0"]
+
+[project.urls]
+Homepage = "https://kakunin.ai"
+Documentation = "https://docs.kakunin.ai"
+Repository = "https://github.com/nqzai/kakunin-sdk-python"
+Issues = "https://github.com/nqzai/kakunin-sdk-python/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["kakunin"]
+
+[tool.mypy]
+strict = true
+python_version = "3.10"
+warn_unused_ignores = false
+
+# Optional integration targets — third-party frameworks the user installs
+# themselves (via extras). No stubs shipped; don't fail strict typing on them.
+[[tool.mypy.overrides]]
+module = [
+    "google.adk.*",
+    "google.antigravity.*",
+    "camel.*",
+    "autogen.*",
+    "crewai.*",
+    "llama_index.*",
+    "langchain.*",
+    "langchain_core.*",
+    "langgraph.*",
+    "swarm.*",
+]
+ignore_missing_imports = true
+
+# langchain's BaseCallbackHandler resolves to Any without its stubs installed;
+# allow subclassing it in the adapter.
+[[tool.mypy.overrides]]
+module = ["kakunin.integrations.langchain"]
+disallow_subclassing_any = false
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
