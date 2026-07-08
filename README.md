@@ -1,5 +1,7 @@
 # kakunin
 
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/nqzai/kakunin-sdk-python/badge)](https://scorecard.dev/viewer/?uri=github.com/nqzai/kakunin-sdk-python)
+
 Python SDK for the [Kakunin](https://kakunin.ai) AI agent compliance API. Issues X.509 certificates to AI agents, monitors behavioral baselines, and enforces scope limits at the tool layer.
 
 ```bash
