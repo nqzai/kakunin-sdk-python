@@ -10,7 +10,7 @@ readme = "README.md"
 license = { text = "Apache-2.0" }
 requires-python = ">=3.10"
 authors = [{ name = "Kakunin", email = "dev@kakunin.ai" }]
-keywords = ["kyc", "ai-agents", "compliance", "mica", "eu-ai-act", "x509", "agent-identity"]
+keywords = ["kyc", "ai-agents", "compliance", "mica", "eu-ai-act", "x509", "agent-identity", "langchain", "regtech", "agent-security"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",

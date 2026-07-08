@@ -1,14 +1,17 @@
 # kakunin
 
+[![PyPI version](https://img.shields.io/pypi/v/kakunin)](https://pypi.org/project/kakunin/)
+[![License](https://img.shields.io/pypi/l/kakunin)](https://github.com/nqzai/kakunin-sdk-python/blob/main/LICENSE)
+[![Docs](https://img.shields.io/badge/docs-kakunin.ai-blue)](https://www.kakunin.ai/docs)
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/nqzai/kakunin-sdk-python/badge)](https://scorecard.dev/viewer/?uri=github.com/nqzai/kakunin-sdk-python)
 
-Python SDK for the [Kakunin](https://kakunin.ai) AI agent compliance API. Issues X.509 certificates to AI agents, monitors behavioral baselines, and enforces scope limits at the tool layer.
+Python SDK for the [Kakunin](https://kakunin.ai) AI agent compliance API. Issues X.509 certificates to AI agents, monitors behavioral baselines, and enforces scope limits at the tool layer — with drop-in guards for LangChain, LlamaIndex, CrewAI, and AutoGen. Talks to the hosted service; **[free sandbox keys](https://www.kakunin.ai/dashboard/api-keys)**, no self-hosting required. Need your own control plane? See [kakunin-core](https://github.com/nqzai/kakunin-core).
 
 ```bash
 pip install kakunin
 ```
 
-Requires Python 3.9+.
+Requires Python 3.10+.
 
 ---
 
