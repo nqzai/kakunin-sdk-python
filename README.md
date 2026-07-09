@@ -1,4 +1,4 @@
-# kakunin
+# kakunin — Python SDK for AI agent identity & compliance
 
 [![PyPI version](https://img.shields.io/pypi/v/kakunin)](https://pypi.org/project/kakunin/)
 [![License](https://img.shields.io/pypi/l/kakunin)](https://github.com/nqzai/kakunin-sdk-python/blob/main/LICENSE)
