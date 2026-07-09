@@ -39,8 +39,8 @@ camel = ["camel-ai>=0.2.0"]
 [project.urls]
 Homepage = "https://kakunin.ai"
 Documentation = "https://docs.kakunin.ai"
-Repository = "https://github.com/nqzai/kakunin-sdk-python"
-Issues = "https://github.com/nqzai/kakunin-sdk-python/issues"
+Repository = "https://github.com/kakunin-ai/kakunin-sdk-python"
+Issues = "https://github.com/kakunin-ai/kakunin-sdk-python/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["kakunin"]

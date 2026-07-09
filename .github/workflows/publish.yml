@@ -53,5 +53,5 @@ jobs:
 
       - name: Publish
         uses: pypa/gh-action-pypi-publish@release/v1
-        # OIDC trusted publishing — configure nqzai/kakunin-sdk-python as a
+        # OIDC trusted publishing — configure kakunin-ai/kakunin-sdk-python as a
         # trusted publisher for the "kakunin" project on PyPI (no token needed).
