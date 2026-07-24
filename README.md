@@ -211,7 +211,7 @@ Full docs at [kakunin.ai/docs](https://kakunin.ai/docs).
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-Thanks to everyone who contributes ([emoji key](https://allcontributors.org/docs/en/emoji-key)) — code and non-code alike:
+Thanks to everyone who contributes ([emoji key](http://web.archive.org/web/20251112051405/https://allcontributors.org/docs/en/emoji-key)) — code and non-code alike:
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
